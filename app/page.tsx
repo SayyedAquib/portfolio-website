@@ -258,7 +258,7 @@ export default function Portfolio() {
                 </Button>
                 <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8">
                   <Link
-                    href="https://drive.google.com/file/d/105UZYVZsN2sZ3JQHfX5-y_-CmAKe0bxw/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1rFtoZM5to-nGj419Wej_ru6YKR7Bjw7Y/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
