@@ -58,6 +58,13 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: [
+    {
+      url: "/rocket.png",
+      sizes: "any",
+      type: "image/png",
+    },
+  ],
   generator: "v0.dev",
 };
 
