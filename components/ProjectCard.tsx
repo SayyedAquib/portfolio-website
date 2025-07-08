@@ -31,7 +31,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
       <CardHeader className="flex-grow">
         <CardTitle className="text-lg sm:text-xl line-clamp-2">{project.title}</CardTitle>
-        <CardDescription className="text-sm sm:text-base line-clamp-3">{project.description}</CardDescription>
+        <CardDescription className="text-sm sm:text-base">{project.description}</CardDescription>
       </CardHeader>
 
       <CardContent className="pt-0">

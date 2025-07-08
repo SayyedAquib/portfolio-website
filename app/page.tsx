@@ -74,7 +74,7 @@ export default function Portfolio() {
   const projects: Project[] = [
     {
       id: "1",
-      title: "Food Finder - Restaurant & Dish Explorer",
+      title: "Food Finder",
       description:
         "A dynamic food discovery platform where users can search for restaurants or specific dishes with real-time filtering, category-based suggestions, and persisted user preferences using Redux and localStorage.",
       tech: [
@@ -93,7 +93,7 @@ export default function Portfolio() {
     },
     {
       id: "2",
-      title: "YouTube Clone - Video Streaming App",
+      title: "Video Streaming Platform",
       description:
         "A full-featured YouTube-like application built with React.js, featuring auto-complete search, video playback, category filters, API integration, and live chat functionality using Redux Toolkit.",
       tech: [
@@ -111,7 +111,7 @@ export default function Portfolio() {
     },
     {
       id: "3",
-      title: "Mega Blogs - Blogging Platform",
+      title: "Mega Blogs",
       description:
         "A modern blog platform where users can create, edit, and manage blog posts with a rich text editor, authentication, and responsive UI using Appwrite for the backend.",
       tech: [
@@ -129,7 +129,7 @@ export default function Portfolio() {
     },
     {
       id: "4",
-      title: "Trimrr - URL Shortener & Analytics",
+      title: "URL Shortener",
       description:
         "A short-link app powered by Supabase with user authentication, QR generation, device and location-based analytics, and a fully responsive dashboard.",
       tech: ["React", "Supabase", "Shadcn/UI", "QRCode.js", "Redux Toolkit"],
@@ -140,7 +140,7 @@ export default function Portfolio() {
     },
     {
       id: "5",
-      title: "Climate - Weather Forecast App",
+      title: "Climate",
       description:
         "A feature-rich weather app showing current and future weather, 24-hour temperature graphs, location search, history, and light/dark mode toggle. Built with Tanstack Query for efficient data fetching.",
       tech: [
@@ -224,8 +224,8 @@ export default function Portfolio() {
         className="py-10 md:pt-20 min-h-screen flex items-center"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="space-y-6 text-center lg:text-left">
+          <div className="grid lg:grid-cols-2 xl:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="space-y-6 text-center 2xl:pl-28 lg:text-left">
               <div className="space-y-4">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   Hi, I'm <span className="text-primary">Aquib Sayyed</span>
@@ -421,7 +421,7 @@ export default function Portfolio() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
