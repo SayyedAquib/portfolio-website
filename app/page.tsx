@@ -13,6 +13,7 @@ import {
   Smartphone,
   Database,
   ArrowDown,
+  Phone,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -84,8 +85,8 @@ export default function Portfolio() {
         "Swiggy API",
         "Firebase",
       ],
-      liveUrl: "https://your-live-url.com",
-      githubUrl: "https://github.com/yourusername/foode-finder",
+      liveUrl: "https://aquibs-food-finder.vercel.app",
+      githubUrl: "https://github.com/SayyedAquib/Food-Finder",
       image:
         "https://ik.imagekit.io/ftt55iirby/FoodFinder.png?updatedAt=1751903742448",
       featured: true,
@@ -102,8 +103,8 @@ export default function Portfolio() {
         "React Router DOM",
         "YouTube API",
       ],
-      liveUrl: "https://your-live-url.com",
-      githubUrl: "https://github.com/yourusername/youtube-clone",
+      liveUrl: "https://aquibs-video-streaming-platform.netlify.app/",
+      githubUrl: "https://github.com/SayyedAquib/video-streaming-platform",
       image:
         "https://ik.imagekit.io/ftt55iirby/YouTube.png?updatedAt=1751903742447",
       featured: true,
@@ -120,8 +121,8 @@ export default function Portfolio() {
         "Tailwind CSS",
         "React Router",
       ],
-      liveUrl: "https://your-live-url.com",
-      githubUrl: "https://github.com/yourusername/mega-blogs",
+      liveUrl: "https://aquibs-megablogs.vercel.app/",
+      githubUrl: "https://github.com/SayyedAquib/MegaBlogs",
       image:
         "https://ik.imagekit.io/ftt55iirby/MegaBlogs.png?updatedAt=1751903742302",
       featured: true,
@@ -132,8 +133,8 @@ export default function Portfolio() {
       description:
         "A short-link app powered by Supabase with user authentication, QR generation, device and location-based analytics, and a fully responsive dashboard.",
       tech: ["React", "Supabase", "Shadcn/UI", "QRCode.js", "Redux Toolkit"],
-      liveUrl: "https://your-live-url.com",
-      githubUrl: "https://github.com/yourusername/trimrr",
+      liveUrl: "https://shorrtn.vercel.app/",
+      githubUrl: "https://github.com/SayyedAquib/url-shortener",
       image:
         "https://ik.imagekit.io/ftt55iirby/URLShortener.png?updatedAt=1751903742379",
     },
@@ -149,8 +150,8 @@ export default function Portfolio() {
         "OpenWeather API",
         "Tanstack Query",
       ],
-      liveUrl: "https://your-live-url.com",
-      githubUrl: "https://github.com/yourusername/climate-app",
+      liveUrl: "https://aquibs-climate.netlify.app/",
+      githubUrl: "https://github.com/SayyedAquib/Climate",
       image:
         "https://ik.imagekit.io/ftt55iirby/Climate.png?updatedAt=1751903742363",
     },
@@ -220,7 +221,7 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="pt-10 md:pt-20 min-h-screen flex items-center"
+        className="py-10 md:pt-20 min-h-screen flex items-center"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -255,34 +256,60 @@ export default function Portfolio() {
                 >
                   Get In Touch
                 </Button>
+                <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8">
+                  <Link
+                    href="https://drive.google.com/file/d/105UZYVZsN2sZ3JQHfX5-y_-CmAKe0bxw/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Resume
+                  </Link>
+                </Button>
               </div>
 
-              <div className="flex justify-center lg:justify-start space-x-6 pt-4">
-                <Link
-                  href="https://github.com"
-                  className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-muted/50"
-                  aria-label="GitHub Profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github className="w-6 h-6" />
-                </Link>
-                <Link
-                  href="https://linkedin.com"
-                  className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-muted/50"
-                  aria-label="LinkedIn Profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin className="w-6 h-6" />
-                </Link>
-                <Link
-                  href="mailto:alex@example.com"
-                  className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-muted/50"
-                  aria-label="Send Email"
-                >
-                  <Mail className="w-6 h-6" />
-                </Link>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-primary flex-shrink-0" />
+                  <Link
+                    href="tel:+919766188241"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors text-sm sm:text-base"
+                  >
+                    +91 9766188241
+                  </Link>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+                  <Link
+                    href="mailto:sayyed.aquib89@gmail.com"
+                    className="hover:text-primary transition-colors text-sm sm:text-base"
+                  >
+                    sayyed.aquib89@gmail.com
+                  </Link>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Linkedin className="w-5 h-5 text-primary flex-shrink-0" />
+                  <Link
+                    href="https://linkedin.com/in/sayyedaquib/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors text-sm sm:text-base"
+                  >
+                    linkedin.com/in/sayyedaquib
+                  </Link>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Github className="w-5 h-5 text-primary flex-shrink-0" />
+                  <Link
+                    href="https://github.com/SayyedAquib"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors text-sm sm:text-base"
+                  >
+                    github.com/sayyedaquib
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -290,7 +317,7 @@ export default function Portfolio() {
               <div className="relative w-full max-w-sm sm:max-w-md mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-3xl"></div>
                 <Image
-                  src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-44a8-61f7-ba58-a084fa1b19c4/raw?se=2025-07-07T15%3A40%3A33Z&sp=r&sv=2024-08-04&sr=b&scid=605748fe-a93c-5e53-8bb9-848eb7c74763&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-07T11%3A58%3A42Z&ske=2025-07-08T11%3A58%3A42Z&sks=b&skv=2024-08-04&sig=CUtXrrhpVM3DzsN0aig9t1sC83IjfhXI4yt0DJw5bDs%3D"
+                  src="https://ik.imagekit.io/ftt55iirby/Moody%20Profile%20with%20Glowing%20Headphones.png?updatedAt=1751915259281"
                   alt="Aquib Sayyed - Software Engineer"
                   width={400}
                   height={400}
@@ -472,6 +499,17 @@ export default function Portfolio() {
 
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
+                    <Phone className="w-5 h-5 text-primary flex-shrink-0" />
+                    <Link
+                      href="tel:+919766188241"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors text-sm sm:text-base"
+                    >
+                      +91 9766188241
+                    </Link>
+                  </div>
+                  <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                     <Link
                       href="mailto:sayyed.aquib89@gmail.com"
@@ -483,12 +521,12 @@ export default function Portfolio() {
                   <div className="flex items-center space-x-3">
                     <Linkedin className="w-5 h-5 text-primary flex-shrink-0" />
                     <Link
-                      href="https://https://www.linkedin.com/in/sayyedaquib/"
+                      href="https://linkedin.com/in/sayyedaquib/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors text-sm sm:text-base"
                     >
-                      linkedin.com/in/sayyedaquib/
+                      linkedin.com/in/sayyedaquib
                     </Link>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -499,7 +537,7 @@ export default function Portfolio() {
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors text-sm sm:text-base"
                     >
-                      github.com/SayyedAquib
+                      github.com/sayyedaquib
                     </Link>
                   </div>
                 </div>
@@ -529,7 +567,7 @@ export default function Portfolio() {
                 <Github className="w-5 h-5" />
               </Link>
               <Link
-                href="https://www.linkedin.com/in/sayyedaquib/"
+                href="https://linkedin.com/in/sayyedaquib"
                 className="text-muted-foreground hover:text-primary transition-colors p-2 rounded-full hover:bg-muted/50"
                 aria-label="LinkedIn Profile"
                 target="_blank"

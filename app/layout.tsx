@@ -23,18 +23,29 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    // url: "https://alexjohnson.dev",
+    url: "https://aquibsayyed.vercel.app/",
     title: "Aquib Sayyed - Frontend Developer",
     description:
       "Frontend Developer & UI/UX Enthusiast specializing in React, Next.js, and modern web technologies.",
     siteName: "Aquib Sayyed Portfolio",
+    images: [
+      {
+        url: "https://ik.imagekit.io/ftt55iirby/image.png?updatedAt=1751962968700",
+        width: 1200,
+        height: 630,
+        alt: "Aquib Sayyed - Frontend Developer Portfolio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aquib Sayyed - Frontend Developer",
     description:
       "Frontend Developer & UI/UX Enthusiast specializing in React, Next.js, and modern web technologies.",
-    creator: "@alexjohnson",
+    creator: "@Sayyed_Aquibb",
+    images: [
+      "https://ik.imagekit.io/ftt55iirby/image.png?updatedAt=1751962968700",
+    ],
   },
   robots: {
     index: true,
@@ -49,6 +60,7 @@ export const metadata: Metadata = {
   },
   generator: "v0.dev",
 };
+
 
 export default function RootLayout({
   children,
