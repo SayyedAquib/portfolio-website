@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     url: "https://aquibsayyed.vercel.app/",
     title: "Aquib Sayyed - Frontend Developer",
     description:
-      "Frontend Developer & UI/UX Enthusiast specializing in React, Next.js, and modern web technologies.",
+      "Frontend Developer & TECH Enthusiast specializing in React, Next.js, and modern web technologies.",
     siteName: "Aquib Sayyed Portfolio",
     images: [
       {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Aquib Sayyed - Frontend Developer",
     description:
-      "Frontend Developer & UI/UX Enthusiast specializing in React, Next.js, and modern web technologies.",
+      "Frontend Developer & TECH Enthusiast specializing in React, Next.js, and modern web technologies.",
     creator: "@Sayyed_Aquibb",
     images: [
       "https://ik.imagekit.io/ftt55iirby/image.png?updatedAt=1751962968700",
