@@ -1,4 +1,5 @@
 import type React from "react"
+
 export interface Project {
   id: string
   title: string
@@ -30,4 +31,19 @@ export interface ContactFormErrors {
   email?: string
   subject?: string
   message?: string
+}
+
+export interface Experience {
+  id: string;
+  title: string;
+  company: string;
+  companyUrl?: string;
+  location: string;
+  startDate: string;
+  endDate: string | null; // null for current position
+  description: string;
+  achievements: string[];
+  technologies: string[];
+  type: "full-time" | "part-time" | "contract" | "freelance" | "internship";
+  logo?: string;
 }

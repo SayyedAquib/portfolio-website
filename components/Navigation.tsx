@@ -13,6 +13,7 @@ import {
   Sun,
   Menu,
   X,
+  Briefcase,
   Rocket,
 } from "lucide-react";
 
@@ -26,12 +27,13 @@ interface NavigationProps {
 const navigationItems = [
   { id: "hero", label: "Home", icon: Home },
   { id: "about", label: "About", icon: User },
+  // { id: "experience", label: "Experience", icon: Briefcase },
   { id: "projects", label: "Projects", icon: FolderOpen },
   { id: "skills", label: "Skills", icon: Code },
   { id: "contact", label: "Contact", icon: Mail },
 ];
 
-export function   Navigation({
+export function Navigation({
   activeSection,
   onSectionClick,
   isDark,

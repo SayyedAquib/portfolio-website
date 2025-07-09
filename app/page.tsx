@@ -14,6 +14,7 @@ import {
   Database,
   ArrowDown,
   Phone,
+  Download,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -21,7 +22,8 @@ import { Navigation } from "@/components/Navigation";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ContactForm } from "@/components/ContactForm";
 import { useScrollSpy } from "@/hooks/useScrollSpy";
-import type { Project, SkillGroup } from "@/types";
+import type { Project, SkillGroup, Experience } from "@/types";
+import { ExperienceSection } from "@/components/ExperienceSection";
 
 const sectionIds = ["hero", "about", "projects", "skills", "contact"];
 
@@ -209,6 +211,41 @@ export default function Portfolio() {
     },
   ];
 
+  const experiences: Experience[] = [
+    {
+      id: "1",
+      title: "Frontend Developer",
+      company: "Zensar Technologies",
+      companyUrl: "https://zensar.com",
+      location: "Pune, India",
+      startDate: "2022-03-28",
+      endDate: "2023-07-17",
+      description:
+        "Worked as a frontend developer focusing on building scalable and responsive applications. Delivered key features in React applications and improved frontend performance.",
+      achievements: [
+        "Built and maintained a YouTube-like video streaming platform using React, Redux Toolkit, Tailwind CSS, and live chat functionality",
+        "Developed a blogging platform (Mega Blogs) with rich-text editing, authentication, and post management integrated with Appwrite",
+        "Created a weather dashboard with real-time API data, search history, and light/dark themes using TanStack Query and Shadcn/UI",
+        "Built a URL shortener with QR generation, analytics, Supabase authentication, and responsive dashboard UI",
+        "Participated in coding challenges including 30 Days of React and 50 Days of JavaScript, showcasing rapid learning and delivery",
+      ],
+      technologies: [
+        "React.js",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Shadcn/UI",
+        "Supabase",
+        "Appwrite",
+        "TanStack Query",
+        "JavaScript",
+        "Figma",
+        "Vite",
+      ],
+      type: "full-time",
+      logo: "/zensar-logo.svg",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
       <Navigation
@@ -256,15 +293,19 @@ export default function Portfolio() {
                 >
                   Get In Touch
                 </Button>
-                <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8">
-                  <Link
-                    href="https://drive.google.com/file/d/1rFtoZM5to-nGj419Wej_ru6YKR7Bjw7Y/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <Link
+                  href="https://drive.google.com/file/d/1rFtoZM5to-nGj419Wej_ru6YKR7Bjw7Y/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    variant="outline"
+                    className="mb-8 bg-transparent w-full"
                   >
-                    Resume
-                  </Link>
-                </Button>
+                    <Download className="w-4 h-4 mr-2" />
+                    Download Resume
+                  </Button>
+                </Link>
               </div>
 
               <div className="space-y-4">
@@ -407,6 +448,12 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+
+      {/* Experience Section */}
+      {/* <ExperienceSection
+        experiences={experiences}
+        onSectionClick={scrollToSection}
+      /> */}
 
       {/* Projects Section */}
       <section id="projects" className="py-16 sm:py-20">
