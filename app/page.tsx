@@ -15,6 +15,7 @@ import {
   ArrowDown,
   Phone,
   Download,
+  X,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -351,6 +352,17 @@ export default function Portfolio() {
                     github.com/sayyedaquib
                   </Link>
                 </div>
+                <div className="flex items-center space-x-3">
+                  <X className="w-5 h-5 text-primary flex-shrink-0" />
+                  <Link
+                    href="https://x.com/Sayyed_Aquibb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors text-sm sm:text-base"
+                  >
+                    x.com/sayyed_aquibb
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -585,6 +597,17 @@ export default function Portfolio() {
                       className="hover:text-primary transition-colors text-sm sm:text-base"
                     >
                       github.com/sayyedaquib
+                    </Link>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <X className="w-5 h-5 text-primary flex-shrink-0" />
+                    <Link
+                      href="https://x.com/Sayyed_Aquibb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors text-sm sm:text-base"
+                    >
+                      x.com/sayyed_aquibb
                     </Link>
                   </div>
                 </div>
